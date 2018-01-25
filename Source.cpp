@@ -8,28 +8,6 @@ void Vector::SetY(float y1) { y = y1; }
 void Vector::SetZ(float z1) { z = z1; }
 Vector Vector::operator+(Vector t) {
 	Vector temp;
-	/*temp.x = x;
-	temp.y = y;
-	temp.z = z;
-	try {
-		for (long i = 0; i < t.x;i++) {
-			if (t.x > 0) temp.x++; else temp.x--;
-			if (temp.x >= FLT_MAX) throw OverFlow();
-			if (i == floor(t.x)) {
-				if (t.x > 0) temp.x+=(t.x-i); else temp.x-=(t.x-i);
-				if (temp.x >= FLT_MAX) throw OverFlow();
-			}
-		}
-		for (int i = 0; i < t.y;i++) {
-			if (t.y > 0) temp.y++; else temp.y--;
-			if (temp.y >= FLT_MAX) throw OverFlow();
-		}
-		for (int i = 0; i < t.z;i++) {
-			if (t.z > 0) temp.z++; else temp.z--;
-			if (temp.z >= FLT_MAX) throw OverFlow();
-		}
-	}
-	catch(OverFlow &e) { e.ErrorPrint(); }*/
 	temp.x = x + t.x;
 	temp.y = y + t.y;
 	temp.z = z + t.z;
